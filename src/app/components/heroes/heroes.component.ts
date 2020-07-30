@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { HeroService } from '../../services/hero.service';
 import { Hero } from '../../interfaces/hero';
+
+import { HeroService } from '../../services/hero.service';
 import { MessageService } from '../../services/message.service';
 
 @Component({
@@ -11,6 +12,7 @@ import { MessageService } from '../../services/message.service';
 export class HeroesComponent implements OnInit {
   selectedHero: Hero;
   heroes: Hero[];
+  targetName?: string = '';
 
   constructor(
     private heroService: HeroService,
@@ -30,4 +32,12 @@ export class HeroesComponent implements OnInit {
     this.heroService.getHeroes()
       .subscribe(heroes => this.heroes = heroes);
   }
+
+  sendHi(hero: Hero) {
+    this.targetName = this.heroService.sayHi(hero.name);
+
+    console.log(this.targetName);
+
+  }
+
 }

@@ -16,4 +16,8 @@ export class HeroService {
     this.messageService.add('HeroService: fetched heroes');
     return of(HEROES);
   }
+
+  sayHi(name) {
+    return `${name}`;
+  }
 }
