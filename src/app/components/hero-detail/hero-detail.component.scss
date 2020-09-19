@@ -30,5 +30,7 @@ span.icon {
     width: 10px;
     height: 10px;
     background-color: blue;
-    &:after {}
+    &:after {
+        display: block;
+    }
 }
