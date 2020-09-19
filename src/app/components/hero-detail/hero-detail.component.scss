@@ -32,5 +32,6 @@ span.icon {
     background-color: blue;
     &:after {
         display: block;
+        border: 1px solid #000;
     }
 }
