@@ -18,6 +18,10 @@ span.icon {
     background-color: black;
     box-shadow: inset 2px 2px 2px #000;
     border: 1px solid red;
+    &::after {
+        content: '';
+        display: block;
+    }
 }
 
 .mouse {
