@@ -33,6 +33,7 @@ span.icon {
     &:after {
         display: block;
         background-color: red;
+        height: 100px;
         border: 1px solid red;
     }
 }
