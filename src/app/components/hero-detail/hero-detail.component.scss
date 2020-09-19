@@ -1,0 +1,10 @@
+.detail {
+    width: 100px;
+    &::after {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: blue;
+    }
+}
