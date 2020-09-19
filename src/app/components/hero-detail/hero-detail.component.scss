@@ -1,5 +1,8 @@
 .detail {
-    width: 100px;
+    width: 200px;
+    height: 100px;
+    background-color: red;
+
     &::after {
         content: '';
         display: block;
@@ -7,4 +10,20 @@
         height: 10px;
         background-color: blue;
     }
+}
+
+span.icon {
+    display: inline-block;
+    background:  no-repeat 0 0;
+    background-color: black;
+    box-shadow: inset 2px 2px 2px #000;
+    border: 1px solid red;
+    &::after {
+        content: '';
+        display: block;
+    }
+}
+
+.mouse {
+
 }
