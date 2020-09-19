@@ -2,6 +2,14 @@
     width: 200px;
     height: 100px;
     background-color: red;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: blue;
+    }
 }
 
 span.icon {
@@ -12,14 +20,4 @@ span.icon {
 
 .mouse {
 
-}
-
-.detail {
-    &::after {
-        content: '';
-        display: block;
-        width: 10px;
-        height: 10px;
-        background-color: blue;
-    }
 }
