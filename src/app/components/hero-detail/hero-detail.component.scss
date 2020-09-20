@@ -41,3 +41,30 @@ span.icon {
         justify-content: center;
     }
 }
+
+.naver {}
+.google {}
+.kakao {}
+.yahoo {}
+
+.a1 {}
+.a2 {}
+.a3 {}
+
+.dell {}
+.dell-product {}
+.samsung {}
+.samsung {}
+.lg {}
+
+.sony {}
+.cannon {
+    display: block;
+    &:after {
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        display: block;
+    }
+}
